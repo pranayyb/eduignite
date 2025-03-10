@@ -70,5 +70,4 @@
 ✅ AI students that mimic their teachers’ teaching styles.
 ✅ A ranking system for teachers based on real AI student performance.
 ✅ Schools can hire top educators based on AI student learning outcomes.
-# eduignite
-# eduignite
+
