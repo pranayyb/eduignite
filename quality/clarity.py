@@ -121,7 +121,7 @@ def calculate_clarity(text):
         "response_category(Classifies the response based on clarity and complexity.)": response_category,
         # "sentiment(Evaluates tone but not directly linked to clarity.)": sentiment,
         "common_words(Lists frequently used words, indicating speech patterns.)": common_words,
-        "repeated_phrases(Identifies repeated phrases that may impact clarity.)": repeated_phrases,
+        # "repeated_phrases(Identifies repeated phrases that may impact clarity.)": repeated_phrases,
     }
 
 

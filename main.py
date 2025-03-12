@@ -1,26 +1,27 @@
+import json
 from quality.clarity import calculate_clarity
 from quality.complexity import analyze_complexity
 from quality.engagement import analyze_engagement
 from quality.pacing import analyze_pacing
 
-with open("sci_2.txt", "r", encoding="utf-8") as file:
-    content = file.read()
 
-clarity_result = calculate_clarity(content)
-complexity_result = analyze_complexity(content)
-engagement_result = analyze_engagement(content)
-pacing_result = analyze_pacing(content, 1314)  
+def get_analysis(file_path, pacing_word_count):
+    with open(file_path, "r", encoding="utf-8") as file:
+        content = file.read()
 
-analysis_results = {
-    "clr": clarity_result,
-    "com": complexity_result,
-    "eng": engagement_result,
-    "pac": pacing_result,
-}
+    analysis_results = {
+        "clr": calculate_clarity(content),
+        "com": analyze_complexity(content),
+        "eng": analyze_engagement(content),
+        "pac": analyze_pacing(content, pacing_word_count),
+    }
 
-import json
+    result_file_path = "analysis_results.json"
+    with open(result_file_path, "w", encoding="utf-8") as result_file:
+        json.dump(analysis_results, result_file, indent=4, ensure_ascii=False)
 
-# print(json.dumps(analysis_results, indent=4))
+    return analysis_results
 
-with open("analysis_results.json", "w", encoding="utf-8") as result_file:
-    json.dump(analysis_results, result_file, indent=4, ensure_ascii=False)
+
+results = get_analysis("sci_2.txt", 1314)
+print(results)

@@ -63,6 +63,7 @@ def generate_mimic_response(question: str, lecture_stats: dict) -> str:
     
     *DON'T PROVIDE VERY LONG ANSWERS.*
     """
+    print(system_prompt)
 
     chat_completion = client.chat.completions.create(
         messages=[
