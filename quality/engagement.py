@@ -2,7 +2,7 @@
 1] examples, analogies, and real-world applications ("For example," "Imagine," or "Just like...").
 2] Question frequency (rhetorical/interactive questions)
 
-nltk 
+nltk
 
 """
 
@@ -113,18 +113,18 @@ def analyze_engagement(text):
     )
 
     return {
-        "example_count": example_count,
-        "question_count": question_count,
-        "direct_engagement_count": direct_engagement_count,
-        "emotional_word_count": emotional_word_count,
-        "anecdote_count": anecdote_count,
-        "avg_sentence_length": avg_sentence_length,
-        "sentence_variation": sentence_variation,
-        "call_to_action_count": call_to_action_count,
-        "humor_count": humor_count,
-        "readability": readability,
-        "engagement_score": engagement_score,
-        "engagement_category": engagement_category,
+        "example_count(Number of examples provided; more examples improve engagement by making content relatable.)": example_count,
+        "question_count(Number of questions asked; rhetorical or direct questions boost audience interaction.)": question_count,
+        # "direct_engagement_count(Number of direct references to the audience; increases personal connection and engagement.)": direct_engagement_count,
+        # "emotional_word_count(Count of emotionally charged words; higher counts enhance audience connection and interest.)": emotional_word_count,
+        "anecdote_count(Number of personal stories or anecdotes shared; increases relatability and engagement.)": anecdote_count,
+        # "avg_sentence_length(Average words per sentence; varied sentence length maintains audience interest.)": avg_sentence_length,
+        "sentence_variation(Diversity in sentence structure; greater variation keeps speech dynamic and engaging.)": sentence_variation,
+        "call_to_action_count(Number of direct prompts for audience action; encourages participation and engagement.)": call_to_action_count,
+        "humor_count(Instances of humor used; appropriate humor makes speech more engaging and enjoyable.)": humor_count,
+        # "readability(Ease of understanding the speech; more readable content tends to be more engaging.)": readability,
+        "engagement_score(Overall measure of how engaging the speech is based on various factors.)": engagement_score,
+        "engagement_category(Classifies engagement level as low, moderate, or high based on analysis.)": engagement_category,
     }
 
 

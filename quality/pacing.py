@@ -67,14 +67,14 @@ def analyze_pacing(text, duration_seconds):
         pacing_category = "Too Slow"
 
     return {
-        "words_per_minute": wpm,
-        "avg_sentence_length": avg_sentence_length,
-        "filler_ratio": filler_ratio,
-        "speech_rate_variability": speech_rate_variability,
-        "long_pause_ratio": long_pause_ratio,
-        "syntactic_complexity": syntactic_complexity,
-        "emphasis_ratio": emphasis_ratio,
-        "pacing_category": pacing_category,
+        "words_per_minute(Words spoken per minute; higher WPM indicates faster speech, while lower WPM suggests slower pacing.)": wpm,
+        "avg_sentence_length(Average words per sentence; longer sentences may slow down pacing, while shorter ones speed it up.)": avg_sentence_length,
+        # "filler_ratio(Percentage of filler words used; excessive fillers can disrupt pacing and make speech feel slower.)": filler_ratio,
+        "speech_rate_variability(Variation in speech speed; moderate variability keeps speech dynamic, while extreme shifts may cause inconsistency.)": speech_rate_variability,
+        "long_pause_ratio(Ratio of long pauses in speech; well-placed pauses enhance clarity, but too many can disrupt pacing.)": long_pause_ratio,
+        # "syntactic_complexity(Complexity of sentence structure; more complex syntax can slow down pacing and require more processing time.)": syntactic_complexity,
+        # "emphasis_ratio(Frequency of emphasized words; strategic emphasis can control pacing and highlight key points.)": emphasis_ratio,
+        "pacing_category(Classifies speech pacing as slow, moderate, or fast based on analysis.)": pacing_category,
     }
 
 

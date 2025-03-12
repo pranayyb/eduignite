@@ -67,12 +67,12 @@ def analyze_complexity(text):
     )
 
     return {
-        "lexical_diversity": lexical_diversity,
-        "syntactic_complexity": syntactic_complexity,
-        "technical_term_density": technical_term_density,
-        "readability": readability,
-        "complexity_score": complexity_score,
-        "complexity_category": complexity_category,
+        "lexical_diversity(Measures vocabulary richness; higher diversity indicates more varied word use and potential complexity.)": lexical_diversity,
+        "syntactic_complexity(Assesses sentence structure complexity; more clauses and advanced grammar increase complexity.)": syntactic_complexity,
+        "technical_term_density(Percentage of technical terms used; higher density indicates greater complexity.)": technical_term_density,
+        # "readability(Evaluates how easy or difficult the speech is to understand; lower readability suggests higher complexity.)": readability,
+        "complexity_score(Overall measure of speech complexity based on vocabulary, syntax, and technical terms.)": complexity_score,
+        "complexity_category(Classifies speech complexity as low, moderate, or high based on analysis.)": complexity_category,
     }
 
 
