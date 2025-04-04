@@ -1,0 +1,1 @@
+whisperx sci_2.mp3 --model base --language en --compute_type float32
